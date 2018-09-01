@@ -32,12 +32,12 @@ class Song
     @@artists.sort!
   end
 
-  def self.count
-    @@count
-  end
-
   def genres
     @@genres.sort!
+  end
+
+  def self.count
+    @@count
   end
 
   def self.genre_count
