@@ -11,8 +11,13 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1
+    GENRES = {}
 
-    @@artists << artist if @@artists.include?(artist) == nil
+    if @@artists.include?(artist) == nil
+      @@artists << artist
+    else
+      
+    end
     if @@genres.include?(genre) == nil
       @@genres << genre
       GENRES[genre] = 1
