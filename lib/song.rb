@@ -5,8 +5,9 @@ class Song
   @@genre_count = {}
 
   attr_accessor :name, :artist, :genre
-  
+
   def initialize(name, artist, genre)
+    @@genres << genre if @@genres.include?(genre) == nil
   end
 
   def self.count
