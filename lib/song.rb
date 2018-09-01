@@ -11,10 +11,10 @@ class Song
     @@artist << artist if @@artists.include?(artist) == nil
     if @@genres.include?(genre) == nil
       @@genres << genre
+      @@genre_count[genre] = 1
+    else
       @@genre_count[genre] += 1
     end
-    
-    if @@genres_count.keys.include?(genre) == nil
   end
 
   def self.count
