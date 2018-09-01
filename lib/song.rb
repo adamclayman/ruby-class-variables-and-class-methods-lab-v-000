@@ -4,7 +4,8 @@ class Song
   @@genres = []
   
   def initialize()
-  
+  end
+
   def self.count
     @@count
   end
