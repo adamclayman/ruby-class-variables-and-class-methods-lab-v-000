@@ -15,6 +15,9 @@ class Song
 
     if @@artists.include?(artist) == nil
       @@artists << artist
+      ARTISTS[artist] = 1
+    else
+      ARTISTS[artist] += 1
     else
 
     end
