@@ -31,11 +31,11 @@ class Song
   end
 
   def artists
-    @@artists.uniq
+    @@artists.uniq.sort
   end
 
   def genres
-    @@genres.uniq
+    @@genres.uniq.sort
   end
 
   def self.count
