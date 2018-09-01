@@ -19,6 +19,7 @@ class Song
     else
       ARTISTS[artist] += 1
     end
+    
     if @@genres.include?(genre) == nil
       @@genres << genre
       GENRES[genre] = 1
