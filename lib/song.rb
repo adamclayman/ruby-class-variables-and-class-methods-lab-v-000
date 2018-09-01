@@ -14,7 +14,6 @@ class Song
     @@count += 1
 
     if @@artists.include?(artist) == false
-      @@artists << artist
       ARTISTS[artist] = 1
     else
       ARTISTS[artist] += 1
@@ -26,6 +25,9 @@ class Song
     else
       GENRES[genre] += 1
     end
+
+    @@artists << artist
+    @@genres << genre
   end
 
   def artists
